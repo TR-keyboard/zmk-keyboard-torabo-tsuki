@@ -1,5 +1,9 @@
 name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
 
 jobs:
   build:
@@ -12,6 +16,7 @@ jobs:
           - torabo_tsuki_central
           - torabo_tsuki_left
           - torabo_tsuki_right
+
     steps:
       - uses: actions/checkout@v2
       - name: Build ZMK
