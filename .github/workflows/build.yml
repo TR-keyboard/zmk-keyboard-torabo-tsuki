@@ -1,25 +1,6 @@
 name: Build ZMK firmware
-on:
-  workflow_dispatch:
-  push:
-  pull_request:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        board:
-          - ble_micro_pro
-        shield:
-          - torabo_tsuki_central
-          - torabo_tsuki_left
-          - torabo_tsuki_right
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build ZMK
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-        with:
-          board: ${{ matrix.board }}
-          shield: ${{ matrix.shield }}
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
