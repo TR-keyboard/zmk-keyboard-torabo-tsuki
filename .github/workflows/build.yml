@@ -7,11 +7,22 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      board: ble_micro_pro
-      shield: |
-        settings_reset
-        torabo_tsuki_central
-        torabo_tsuki_left_peripheral
-        torabo_tsuki_right_peripheral
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        board: [ble_micro_pro]
+        shield: 
+          - settings_reset
+          - torabo_tsuki_central
+          - torabo_tsuki_left_peripheral
+          - torabo_tsuki_right_peripheral
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build ZMK
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+        with:
+          board: ${{ matrix.board }}
+          shield: ${{ matrix.shield }}
