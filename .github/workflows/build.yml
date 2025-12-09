@@ -7,32 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          # --- settings reset ---
-          - board: ble_micro_pro
-            shield: settings_reset
-
-          # --- CENTRAL (トラボ付き中央基板) ---
-          - board: ble_micro_pro
-            shield: torabo_tsuki_central
-
-          # --- LEFT peripheral ---
-          - board: ble_micro_pro
-            shield: torabo_tsuki_left_peripheral
-
-          # --- RIGHT peripheral ---
-          - board: ble_micro_pro
-            shield: torabo_tsuki_right_peripheral
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Build ZMK
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-        with:
-          board: ${{ matrix.board }}
-          shield: ${{ matrix.shield }}
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      board: ble_micro_pro
+      shield: |
+        settings_reset
+        torabo_tsuki_central
+        torabo_tsuki_left_peripheral
+        torabo_tsuki_right_peripheral
