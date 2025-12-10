@@ -7,22 +7,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
-        board: [ble_micro_pro]
-        shield: 
-          - settings_reset
-          - torabo_tsuki_central
-          - torabo_tsuki_left_peripheral
-          - torabo_tsuki_right_peripheral
+        include:
+          # 設定リセット用 UF2
+          - board: ble_micro_pro
+            shield: settings_reset
 
-    steps:
-      - uses: actions/checkout@v2
+          # 左手用 UF2
+          - board: ble_micro_pro
+            shield: torabo_tsuki_left_peripheral
 
-      - name: Build ZMK
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-        with:
-          board: ${{ matrix.board }}
-          shield: ${{ matrix.shield }}
+          # 右手用 UF2（トラボ側）
+          - board: ble_micro_pro
+            shield: torabo_tsuki_right_peripheral
+
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      board: ${{ matrix.board }}
+      shield: ${{ matrix.shield }}
