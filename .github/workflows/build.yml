@@ -1,28 +1,6 @@
 name: Build ZMK firmware
-
-on:
-  workflow_dispatch:
-  push:
-  pull_request:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    strategy:
-      matrix:
-        include:
-          # 設定リセット用 UF2
-          - board: ble_micro_pro
-            shield: settings_reset
-
-          # 左手用 UF2
-          - board: ble_micro_pro
-            shield: torabo_tsuki_left_peripheral
-
-          # 右手用 UF2（トラボ側）
-          - board: ble_micro_pro
-            shield: torabo_tsuki_right_peripheral
-
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      board: ${{ matrix.board }}
-      shield: ${{ matrix.shield }}
