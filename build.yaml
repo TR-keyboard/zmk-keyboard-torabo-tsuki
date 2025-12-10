@@ -1,2 +1,2 @@
-board: [ "ble_micro_pro" ]
-shield: [ "torabo_tsuki" ]
+board: ["ble_micro_pro"]
+shield: ["torabo_tsuki_left", "torabo_tsuki_right"]
