@@ -158,7 +158,7 @@
         zephyr,axis-y = <INPUT_REL_Y>;
 
         /*   optional features   */
-        power-gpios = <&bmp 14 GPIO_ACTIVE_HIGH>;
+        // power-gpios = <&bmp 14 GPIO_ACTIVE_HIGH>;
         // snipe-layers = <1>;
         // scroll-layers = <2 3>;
         automouse-layer = <1>;
