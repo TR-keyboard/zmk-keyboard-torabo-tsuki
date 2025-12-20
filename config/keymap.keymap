@@ -92,7 +92,7 @@
 &trans  &trans  &trans                      &trans                      &trans                 &trans                  &trans  &trans                &trans  &trans                 &trans  &trans
 &trans  &trans  &kp LC(LA(LEFT_ARROW))      &kp LS(LC(LA(UP_ARROW)))    &kp LC(LA(RIGHT))      &trans                  &trans  &trans                &trans  &trans                 &trans  &trans
 &trans  &trans  &kp LS(LA(LC(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LC(LA(LS(RIGHT)))  &trans                  &trans  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
 &trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
             >;
         };
