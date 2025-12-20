@@ -21,6 +21,13 @@
             bindings = <&kp LS(M) &kp A &kp T &kp E &kp T &kp A &kp Z &kp I &kp KP_ENTER>;
             label = "PASS";
         };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(NUMBER_4))>;
+            label = "SCREENSHOT";
+        };
     };
 
     keymap {
@@ -30,7 +37,7 @@
             bindings = <
 &trans  &trans          &trans   &trans  &trans             &trans                                               &trans       &trans  &trans     &trans   &trans                &trans
 &trans  &mt LEFT_ALT Q  &kp W    &kp E   &kp R              &lt 8 T                                              &lt 8 Y      &kp U   &lt 4 I    &kp O    &kp P                 &trans
-&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                                &kp H        &kp J   &lt 1 K    &kp L    &kp SEMI              &trans
+&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                                &kp H        &kp J   &lt 7 K    &kp L    &kp SEMI              &trans
 &trans  &kp Z           &kp X    &kp C   &kp V              &kp B        &trans      &trans                      &kp N        &kp M   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &trans
 &trans  &kp LSHIFT      &lt 6 A  &kp F4  &kp RIGHT_COMMAND  &lt 2 SPACE  &lt 1 CAPS  &mt LEFT_COMMAND BACKSPACE  &lt 3 ENTER  &trans  &trans     &trans   &kp RGUI              &trans
             >;
@@ -58,11 +65,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans      &trans               &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &Hero   &kp LS(LC(TAB))  &kp W       &kp LC(TAB)          &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &trans       &trans  &trans                  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &screenshot  &trans  &trans                  &Hero   &kp LS(LC(TAB))  &kp LG(W)   &kp LC(TAB)          &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans       &trans  &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
+&trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
+&trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
             >;
         };
 
@@ -98,11 +105,11 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans                      &trans                      &trans                 &trans                  &trans  &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &kp LC(LA(LEFT_ARROW))      &kp LS(LC(LA(UP_ARROW)))    &kp LC(LA(RIGHT))      &trans                  &trans  &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &kp LS(LA(LC(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LC(LA(LS(RIGHT)))  &trans                  &trans  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &trans                      &trans                      &trans                 &trans                  &trans  &trans                &trans           &trans                 &trans  &trans
+&trans  &trans  &kp LC(LA(LEFT_ARROW))      &kp LS(LC(LA(UP_ARROW)))    &kp LC(LA(RIGHT))      &trans                  &trans  &trans                &trans           &trans                 &trans  &trans
+&trans  &trans  &kp LS(LA(LC(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LC(LA(LS(RIGHT)))  &trans                  &trans  &kp LG(LEFT_BRACKET)  &msc MOVE_Y(10)  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans  &trans  &trans                &trans           &trans                 &trans  &trans
+&trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans           &trans                 &trans  &trans
             >;
         };
 
