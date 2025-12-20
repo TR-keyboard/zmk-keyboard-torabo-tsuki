@@ -111,6 +111,7 @@
 &trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
 &trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
             >;
+input-processors = <&zip_temp_scroll_move>; //
         };
 
         layer_8 {
