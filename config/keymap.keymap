@@ -14,6 +14,15 @@
         };
     };
 
+    macros {
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp A &kp T &kp E &kp T &kp A &kp Z &kp I &kp KP_ENTER>;
+            label = "PASS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,7 +30,7 @@
             bindings = <
 &trans  &trans          &trans   &trans  &trans             &trans                                               &trans       &trans  &trans     &trans   &trans                &trans
 &trans  &mt LEFT_ALT Q  &kp W    &kp E   &kp R              &lt 8 T                                              &lt 8 Y      &kp U   &lt 4 I    &kp O    &kp P                 &trans
-&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                                &kp H        &kp J   &kp K      &kp L    &kp SEMI              &trans
+&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                                &kp H        &kp J   &lt 1 K    &kp L    &kp SEMI              &trans
 &trans  &kp Z           &kp X    &kp C   &kp V              &kp B        &trans      &trans                      &kp N        &kp M   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &trans
 &trans  &kp LSHIFT      &lt 6 A  &kp F4  &kp RIGHT_COMMAND  &lt 2 SPACE  &lt 1 CAPS  &mt LEFT_COMMAND BACKSPACE  &lt 3 ENTER  &trans  &trans     &trans   &kp RGUI              &trans
             >;
@@ -29,11 +38,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &mkp LCLK  &mkp RCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans     &trans           &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans     &trans           &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &mkp LCLK  &msc MOVE_Y(10)  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans     &trans           &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans     &trans           &trans     &trans  &trans
             >;
         };
 
