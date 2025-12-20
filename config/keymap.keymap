@@ -15,7 +15,7 @@
     };
 
     macros {
-        pass: pass {
+        Hero: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(M) &kp A &kp T &kp E &kp T &kp A &kp Z &kp I &kp KP_ENTER>;
@@ -59,7 +59,7 @@
         layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans      &trans               &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(LC(TAB))  &kp W       &kp LC(TAB)          &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &Hero   &kp LS(LC(TAB))  &kp W       &kp LC(TAB)          &kp C_VOLUME_UP  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
