@@ -35,11 +35,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans          &trans   &trans  &trans             &trans                               &trans       &trans  &trans     &trans   &trans                &trans
-&trans  &mt LEFT_ALT Q  &kp W    &kp E   &kp R              &lt 8 T                              &lt 8 Y      &kp U   &lt 4 I    &kp O    &kp P                 &trans
-&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                &kp H        &kp J   &lt 7 K    &kp L    &kp SEMI              &trans
-&trans  &kp Z           &kp X    &kp C   &kp V              &kp B        &trans      &trans      &kp N        &kp M   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &trans
-&trans  &kp LSHIFT      &lt 6 A  &kp F4  &kp RIGHT_COMMAND  &lt 2 SPACE  &lt 1 CAPS  &kp DELETE  &lt 3 ENTER  &trans  &trans     &trans   &kp RGUI              &trans
+&trans  &trans          &trans   &trans  &trans             &trans                                  &trans       &trans  &trans     &trans   &trans                &trans
+&trans  &mt LEFT_ALT Q  &kp W    &kp E   &kp R              &lt 8 T                                 &lt 8 Y      &kp U   &lt 4 I    &kp O    &kp P                 &trans
+&trans  &kp A           &kp S    &kp D   &kp F              &kp G                                   &kp H        &kp J   &lt 7 K    &kp L    &kp SEMI              &trans
+&trans  &kp Z           &kp X    &kp C   &kp V              &kp B        &trans      &trans         &kp N        &kp M   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &trans
+&trans  &kp LSHIFT      &lt 6 A  &kp F4  &kp RIGHT_COMMAND  &lt 2 SPACE  &lt 1 CAPS  &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &trans   &kp RGUI              &trans
             >;
         };
 
@@ -55,21 +55,21 @@
 
         layer_2 {
             bindings = <
-&trans  &trans   &trans    &trans          &trans           &trans                        &trans                &trans                 &trans        &trans        &trans        &trans
-&trans  &kp N1   &kp N2    &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5                  &kp N6                &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp ESC  &kp LEFT  &kp UP          &kp RIGHT_ARROW  &kp N5                        &trans                &trans                 &kp SQT       &kp MINUS     &kp EQUAL     &trans
-&trans  &kp TAB  &trans    &kp DOWN_ARROW  &trans           &trans        &trans  &none   &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp COMMA     &kp PERIOD    &kp SLASH     &trans
-&trans  &trans   &trans    &trans          &trans           &trans        &none   &trans  &trans                &trans                 &trans        &trans        &trans        &trans
+&trans  &trans   &trans    &trans          &trans           &trans                                         &trans                &trans                 &trans        &trans        &trans        &trans
+&trans  &kp N1   &kp N2    &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5                                   &kp N6                &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp ESC  &kp LEFT  &kp UP          &kp RIGHT_ARROW  &kp N5                                         &trans                &trans                 &kp SQT       &kp MINUS     &kp EQUAL     &trans
+&trans  &kp TAB  &trans    &kp DOWN_ARROW  &trans           &trans        &trans  &none                    &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp COMMA     &kp PERIOD    &kp SLASH     &trans
+&trans  &trans   &trans    &trans          &trans           &trans        &none   &mt BACKSPACE BACKSPACE  &trans                &trans                 &trans        &trans        &trans        &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans                &trans  &trans                  &trans  &trans           &trans      &trans               &trans           &trans
-&trans  &trans  &trans  &kp LG(LS(NUMBER_4))  &trans  &trans                  &Hero   &kp LS(LC(TAB))  &kp LG(W)   &kp LC(TAB)          &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans                &trans  &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
-&trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
-&trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &trans  &trans                &trans                  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &trans  &kp LG(LC(NUMBER_4))  &trans                  &Hero   &kp LS(LC(TAB))  &kp LG(W)   &kp LC(TAB)          &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans                &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
+&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
+&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
             >;
         };
 
