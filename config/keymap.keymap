@@ -2,15 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/input_transform.h>
-
-&zip_scroll_scaler {
-    status = "okay";
-};
-
-&zip_temp_scroll_move {
-    status = "okay";
-};
 
 / {
     combos {
@@ -22,6 +13,7 @@
             layers = <2>;
         };
     };
+
     macros {
         Hero: pass {
             compatible = "zmk,behavior-macro";
@@ -119,7 +111,6 @@
 &trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
 &trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &trans  &trans  &trans                &trans  &trans                 &trans  &trans
             >;
-input-processors = <&zip_temp_scroll_move>; //
         };
 
         layer_8 {
