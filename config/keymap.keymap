@@ -65,11 +65,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                   &trans                  &trans  &trans           &trans      &trans               &trans           &trans
-&trans  &trans  &trans  &trans  &kp LG(LC(KP_NUMBER_4))  &trans                  &Hero   &kp LS(LC(TAB))  &kp LG(W)   &kp LC(TAB)          &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans                   &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
-&trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
-&trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &trans  &trans                &trans                  &trans  &trans           &trans      &trans               &trans           &trans
+&trans  &trans  &trans  &trans  &kp LG(LS(NUMBER_4))  &trans                  &Hero   &kp LS(LC(TAB))  &kp LG(W)   &kp LC(TAB)          &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans                &trans                  &trans  &kp LC(LEFT)     &kp LC(UP)  &kp LC(RIGHT_ARROW)  &kp C_VOL_DN     &trans
+&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans           &trans      &trans               &kp K_MUTE       &trans
+&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans           &trans      &trans               &trans           &trans
             >;
         };
 
@@ -105,11 +105,11 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans                      &trans                      &trans                 &trans                            &trans            &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &kp LC(LA(LEFT_ARROW))      &kp LS(LC(LA(UP_ARROW)))    &kp LC(LA(RIGHT))      &trans                            &trans            &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &kp LS(LA(LC(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LC(LA(LS(RIGHT)))  &trans                            &trans            &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans            &trans            &trans                &trans  &trans                 &trans  &trans
-&trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &kp LG(KP_MINUS)  &kp LG(KP_EQUAL)  &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &trans                      &trans                      &trans                 &trans                            &trans        &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &kp LC(LA(LEFT_ARROW))      &kp LS(LC(LA(UP_ARROW)))    &kp LC(LA(RIGHT))      &trans                            &trans        &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &kp LS(LA(LC(LEFT_ARROW)))  &kp LS(LA(LC(DOWN_ARROW)))  &kp LC(LA(LS(RIGHT)))  &trans                            &trans        &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans                      &kp LG(M)                   &trans                 &trans  &trans  &trans            &trans        &trans                &trans  &trans                 &trans  &trans
+&trans  &trans  &trans                      &trans                      &trans                 &trans  &trans  &kp LG(KP_MINUS)  &kp LG(PLUS)  &trans                &trans  &trans                 &trans  &trans
             >;
         };
 
