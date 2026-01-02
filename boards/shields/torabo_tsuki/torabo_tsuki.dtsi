@@ -159,6 +159,6 @@
         // snipe-layers = <1>;
         scroll-layers = <7>;
         automouse-layer = <1>;
-        invert-scroll-x;
+        scroll-split-x = <(-1)>;
     };
 };
